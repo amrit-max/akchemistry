@@ -410,6 +410,110 @@ section {
     color: var(--primary-color);
 }
 
+/* Syllabus Section */
+.syllabus-section {
+    padding: 6rem 0;
+}
+
+.syllabus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.syllabus-item {
+    background: var(--white);
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    color: var(--text-color);
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.syllabus-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.syllabus-content {
+    flex: 1;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.syllabus-content:hover {
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+.syllabus-content i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: block;
+    transition: var(--transition);
+}
+
+.syllabus-item:hover .syllabus-content i {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.syllabus-text {
+    width: 100%;
+}
+
+.syllabus-content h3 {
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.syllabus-content p {
+    color: var(--light-text);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.download-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.download-btn i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .syllabus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* PYQ Downloads Section */
 .pyq-section {
     background-color: var(--light-bg);
@@ -445,37 +549,61 @@ section {
 .pyq-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
     background: var(--light-bg);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
-    text-decoration: none;
-    color: var(--text-color);
     transition: var(--transition);
+    overflow: hidden;
 }
 
 .pyq-item:hover {
-    background: var(--primary-color);
-    color: white;
     border-color: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.pyq-item i {
+.pyq-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: var(--text-color);
+    flex: 1;
+    transition: var(--transition);
+}
+
+.pyq-item:hover .pyq-content {
+    background: var(--primary-color);
+    color: white;
+}
+
+.pyq-content i {
     font-size: 1.5rem;
     color: var(--primary-color);
     transition: var(--transition);
 }
 
-.pyq-item:hover i {
+.pyq-item:hover .pyq-content i {
     color: white;
 }
 
-.pyq-item span {
+.pyq-content span {
     font-weight: 500;
     flex: 1;
+}
+
+.pyq-item .download-btn {
+    width: 50px;
+    height: 100%;
+    min-height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.pyq-item:hover .download-btn {
+    background-color: var(--secondary-color);
 }
 
 .pyq-link {
