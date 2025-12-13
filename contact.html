@@ -261,6 +261,11 @@
             
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
+                    // Don't prevent default for enroll now button
+                    if (this.classList.contains('enroll-now-btn')) {
+                        return;
+                    }
+                    
                     e.preventDefault();
                     
                     const targetId = this.getAttribute('href');
@@ -274,6 +279,53 @@
                         });
                     }
                 });
+            });
+
+            // Enroll Modal Functionality
+            const enrollModal = document.getElementById('enrollModal');
+            const enrollNowButtons = document.querySelectorAll('.enroll-now-btn');
+            const enrollModalClose = document.querySelector('.enroll-modal-close');
+
+            // Open modal when Enroll Now is clicked
+            if (enrollNowButtons.length > 0) {
+                enrollNowButtons.forEach(button => {
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (enrollModal) {
+                            enrollModal.classList.add('active');
+                            document.body.style.overflow = 'hidden';
+                        }
+                    });
+                });
+            }
+
+            // Close modal when X is clicked
+            if (enrollModalClose) {
+                enrollModalClose.addEventListener('click', function() {
+                    if (enrollModal) {
+                        enrollModal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Close modal when clicking outside
+            if (enrollModal) {
+                enrollModal.addEventListener('click', function(e) {
+                    if (e.target === enrollModal) {
+                        enrollModal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && enrollModal && enrollModal.classList.contains('active')) {
+                    enrollModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
             });
         });
     </script>
