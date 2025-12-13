@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: "12 Months",
             students: "150+",
             image: "assets/JA.jpg",
-            description: "Comprehensive coaching for JEE Advanced with expert faculty and personalized attention."
+            description: "Master Chemistry for JEE Advanced with expert teaching, comprehensive theory, and personalized attention to excel in the toughest engineering entrance exam."
         },
         {
             title: "JEE Main",
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: "12 Months",
             students: "180+",
             image: "assets/JM.jpg",
-            description: "Complete JEE Main preparation with in-depth theory, practice tests, and doubt-solving sessions."
+            description: "Excel in Chemistry for JEE Main with in-depth concepts, practice tests, and doubt-solving sessions designed to boost your chemistry scores."
         },
         {
             title: "NEET",
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: "12 Months",
             students: "120+",
             image: "assets/neet.jpg",
-            description: "Complete NEET preparation with comprehensive study material, test series, and expert guidance."
+            description: "Ace Chemistry for NEET with comprehensive study material, test series, and expert guidance to secure top ranks in medical entrance exams."
         },
         {
             title: "12th Boards",
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: "10 Months",
             students: "200+",
             image: "assets/12th.jpg",
-            description: "Complete preparation for 12th Board exams (CBSE/State Board) with chapter-wise tests and revisions."
+            description: "Score high in 12th Board Chemistry (CBSE/State Board) with chapter-wise tests, revisions, and expert teaching for excellent results."
         }
     ];
 

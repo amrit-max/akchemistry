@@ -410,6 +410,98 @@ section {
     color: var(--primary-color);
 }
 
+/* PYQ Downloads Section */
+.pyq-section {
+    background-color: var(--light-bg);
+}
+
+.pyq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.pyq-category {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.pyq-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.pyq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.pyq-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--light-bg);
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.pyq-item:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.pyq-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.pyq-item:hover i {
+    color: white;
+}
+
+.pyq-item span {
+    font-weight: 500;
+    flex: 1;
+}
+
+.pyq-link {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.pyq-link i {
+    color: white;
+}
+
+.pyq-link:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+@media (max-width: 768px) {
+    .pyq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pyq-category {
+        padding: 1.5rem;
+    }
+}
+
 /* Testimonials Section */
 .testimonial-slider {
     max-width: 800px;
