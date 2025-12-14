@@ -146,6 +146,14 @@ document.addEventListener('DOMContentLoaded', function() {
             students: "200+",
             image: "assets/12th.jpg",
             description: "Score high in 12th Board Chemistry (CBSE/State Board) with chapter-wise tests, revisions, and expert teaching for excellent results."
+        },
+        {
+            title: "BITSAT",
+            category: "Engineering",
+            duration: "12 Months",
+            students: "100+",
+            image: "assets/bitsat.jpg",
+            description: "Prepare for BITSAT Chemistry with comprehensive coverage, practice tests, and expert guidance to secure admission in BITS Pilani."
         }
     ];
 
