@@ -61,6 +61,26 @@
     font-size: 1.5rem;
 }
 
+.instructor-info {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(59, 130, 246, 0.06));
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.instructor-info p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.instructor-info strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 .info-item {
     display: flex;
     align-items: flex-start;
@@ -316,6 +336,7 @@ textarea.form-control {
         height: 320px;
     }
 }
+
 
 
 
