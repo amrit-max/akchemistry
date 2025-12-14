@@ -130,9 +130,9 @@ a {
 }
 
 .logo-subtitle {
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: #6b7280;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #9333ea;
     font-style: italic;
     letter-spacing: 0.5px;
     margin-top: 2px;
@@ -1023,7 +1023,7 @@ section {
     }
     
     .logo-subtitle {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     
     .hero h1 {
